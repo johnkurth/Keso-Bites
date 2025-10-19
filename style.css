@@ -832,6 +832,11 @@ footer.reveal.active {
 }
 
 @media (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
   header {
     flex-direction: column;
     align-items: center;
@@ -1015,4 +1020,22 @@ footer.reveal.active {
   footer p {
     font-size: 0.85rem;
   }
+
+  #cta {
+    height: auto !important;
+    padding-top: 100px !important;
+  }
+
+  #contact {
+    padding-bottom: 3rem;
+  }
+
+  footer {
+    position: relative !important;
+    bottom: 0 !important;
+    z-index: 1;
+    margin-top: 2rem;
+    padding-top: 1rem;
+  }
 }
+
